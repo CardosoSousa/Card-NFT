@@ -15,9 +15,9 @@ body{
 .container{
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 250px;
     padding-bottom: 100px;
-    background-size: cover;
+    
     
 }
 
@@ -34,12 +34,31 @@ body{
 
 img.image{
     position: relative;
+    display: flex;
     width: 300px;
     height: 300px;
-    margin: 10px;
-    text-align: center;
-    border-radius: 20px;
+    margin-left: 25px;
+    margin-top: 15px;
+    align-items: center;
+    border-radius: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.185);
+    
+}
+
+img.image:hover {
+    opacity: 0.3;
+    width: 300px;
+    height: 300px;
+  }
+
+.view{
+    position: absolute;
+    margin: -170px -20px ;
+    opacity: 0;
+}
+
+.view:hover{
+    opacity: 1;
 }
 
 .equi h1{
@@ -48,14 +67,18 @@ img.image{
     padding-left: 20px;
     padding-top: 20px;
     font-size: 25px;
-    
+}
+.equi h1:hover{
+    color: hsl(178, 100%, 50%);
+    transition: 0.5s;
+    cursor: pointer;
 }
 .equi p{
     color: hsl(215, 51%, 70%);
     text-align: left;
     padding-left: 20px;
     padding-top: 20px;
-    letter-spacing: 1.4px;
+    line-height: 25px;
 }
 
 .preco{
@@ -79,19 +102,40 @@ img.image{
 }
 
 .preco > img.clock{
-    width: 10px;
+    width: 16px;
     height: 16px;
 }
 
 .altor{
     display: flex;
     justify-content: space-around;
+    
 }
 
-.altor img{
+.altor p{
+    padding-top: 10px;
+    padding-right: 70px;
+    color: hsl(215, 51%, 70%);
+}
+
+.altor a {
+    color: white;
+    text-decoration: none;
+}
+
+.altor a:hover{
+    color: hsl(178, 100%, 50%);
+    transition: 0.5;
+}
+
+.foto{
     width: 50px;
-    height: 50px;
-    
+    height: 50px; 
+    border: 1px solid white;    
+    border-radius: 50%;
+}
+.altor img{
+    margin-left: 30px;
 }
 
 footer{ 
